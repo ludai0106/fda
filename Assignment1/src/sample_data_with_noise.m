@@ -11,5 +11,5 @@ function [dataset,x_sample,y_sample] = sample_data_with_noise(sample_size)
 %random sample
     [x_sample,idx] = datasample(x,sample_size,'Replace',false)
     y_sample = dataset(idx);
-    scatter(x_sample,y_sample)
+    %scatter(x_sample,y_sample)
 end

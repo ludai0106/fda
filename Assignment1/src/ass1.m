@@ -1,7 +1,7 @@
 figure
 hold all
 mark={[1,0.4,0.6],[0.8,0.2,0.8],[0.5,0.8,1],[0.5,0.3,0.9],[0.2,0.8,0.2]};
-sample_size = 100
+sample_size = 1000
 x_tst = 1:0.1:30;
 h=zeros(1,6)
 for fit = 1:5
@@ -22,7 +22,7 @@ axis([0 32 -150 600])
 mark={'-b','-c','-m','-r','-g'};
 legend(h(1:6),{'linear','quadratic','cubic','4-th','5-th','f(x)'},'Position',[0.15,0.80,0.20,0.1])
 xlabel('x')
-ylabel('x*cos(x)')
+ylabel('0.6*x.^2+0.3*x+x.*cos(x)')
 str=sprintf('Sample size %d', sample_size);
 title(str)
 hold off
