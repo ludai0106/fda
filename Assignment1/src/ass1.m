@@ -17,13 +17,14 @@ for fit = 1:5
     end
 end
 h(6)=plot(x_tst,fun(x_tst),'-k','LineWidth',2)  
-plot([10 10],[0 150],'--')
-axis([0 32 0 150])
+plot([10 10],[-150 600],'--')
+axis([0 32 -150 600])
 mark={'-b','-c','-m','-r','-g'};
 legend(h(1:6),{'linear','quadratic','cubic','4-th','5-th','f(x)'},'Position',[0.15,0.80,0.20,0.1])
 xlabel('x')
 ylabel('x*cos(x)')
-title('Sample size (10)')
+str=sprintf('Sample size %d', sample_size);
+title(str)
 hold off
 
 
