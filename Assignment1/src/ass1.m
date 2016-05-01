@@ -1,7 +1,7 @@
 figure
 hold all
 mark={[1,0.4,0.6],[0.8,0.2,0.8],[0.5,0.8,1],[0.5,0.3,0.9],[0.2,0.8,0.2]};
-sample_size = 1000
+sample_size = 10
 x_tst = 1:0.1:30;
 h=zeros(1,6)
 for fit = 1:5
