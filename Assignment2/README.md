@@ -17,4 +17,4 @@
 ### email - both
 
     j.vandenberg@tudelft.nl
-    andre.teixeira@tudelft.nl)
+    andre.teixeira@tudelft.nl
